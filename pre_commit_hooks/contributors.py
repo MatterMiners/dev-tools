@@ -4,7 +4,7 @@ import re
 
 
 def main():
-    command = "git shortlog -s -n -e"
+    command = "git shortlog -sne HEAD"
     process = subprocess.run(
         command.split(), check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE
     )
