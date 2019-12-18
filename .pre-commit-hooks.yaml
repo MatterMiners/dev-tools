@@ -1,0 +1,5 @@
+- id: contributors
+  name: contributors
+  description: Hook to add a CONTRIBUTORS file to your repo based on git shortlog
+  entry: contributors
+  language: python

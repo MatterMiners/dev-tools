@@ -5,14 +5,13 @@ import re
 
 def main():
     command = "git shortlog -s -n -e"
-    process = subprocess.run(command.split(),
-                             check=True,
-                             stdout=subprocess.PIPE,
-                             stderr=subprocess.PIPE)
+    process = subprocess.run(
+        command.split(), check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE
+    )
 
     pattern = re.compile(r"^(?P<commits>\d+)\s+(?P<name>.*)\s+(?P<email>\S+)$")
 
-    with open("CONTRIBUTORS", 'w') as f:
+    with open("CONTRIBUTORS", "w") as f:
         f.write("Contributors ordered by number of commits:\n")
         f.write("==========================================\n")
         for line in process.stdout.decode().strip().splitlines():
@@ -22,4 +21,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
