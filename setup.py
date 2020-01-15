@@ -26,7 +26,8 @@ setup(
         "Programming Language :: Python :: 3.8",
     ],
     entry_points={
-        "console_scripts": ["contributors = pre_commit_hooks.contributors:main"]
+        "console_scripts": ["contributors = pre_commit_hooks.contributors:main",
+                            "change-log = pre_commit_hooks.change-log:main"]
     },
     keywords="development tools, contributors",
     packages=find_packages(exclude=["tests"]),
