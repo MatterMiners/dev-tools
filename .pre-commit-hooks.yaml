@@ -2,10 +2,12 @@
   name: contributors
   description: Hook to add a CONTRIBUTORS file to your repo based on git shortlog
   entry: contributors
+  pass_filenames: false
   language: python
 
 - id: changelog
   name: changelog
   description: Hook to manage change logs based on yaml fragements
   entry: changelog
+  pass_filenames: false
   language: python
