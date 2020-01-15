@@ -305,7 +305,6 @@ CHANGELOG_HEADER = f"""
 #########
 CHANGELOG
 #########
-
 """.lstrip()
 
 
@@ -325,7 +324,7 @@ def compile_changelog(fragment_dir, output, item_format, categories: List[str]):
             for line in format_release(
                 release, versioned_fragments[release.semver], item_format, categories
             ):
-                out_stream.write(line + '\n')
+                out_stream.write('\n' + line)
 
 
 if __name__ == '__main__':
