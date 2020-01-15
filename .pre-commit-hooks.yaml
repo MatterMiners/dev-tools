@@ -4,8 +4,8 @@
   entry: contributors
   language: python
 
-- id: change-log
-  name: change-log
+- id: changelog
+  name: changelog
   description: Hook to manage change logs based on yaml fragements
-  entry: change-log
+  entry: changelog
   language: python

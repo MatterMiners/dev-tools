@@ -27,7 +27,7 @@ setup(
     ],
     entry_points={
         "console_scripts": ["contributors = pre_commit_hooks.contributors:main",
-                            "change-log = pre_commit_hooks.change-log:main"]
+                            "changelog = pre_commit_hooks.changelog:main"]
     },
     keywords="development tools, contributors",
     packages=find_packages(exclude=["tests"]),
