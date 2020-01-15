@@ -3,3 +3,9 @@
   description: Hook to add a CONTRIBUTORS file to your repo based on git shortlog
   entry: contributors
   language: python
+
+- id: change-log
+  name: change-log
+  description: Hook to manage change logs based on yaml fragements
+  entry: change-log
+  language: python
